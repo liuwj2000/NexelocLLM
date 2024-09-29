@@ -1,0 +1,17 @@
+{
+    "dataset_class": "XianNextlocLLMDatasetMer",
+    "metrics": ["Recall", "F1", "NDCG","Precision"],
+    "mervec_size":16,
+    "hour_emb_size":4,
+    "day_emb_size":4,
+    "dur_emb_size":8,
+    "poi_emb_size":16,
+    "topk": [1,5,10],
+    "patience_early_stop": 15,
+    "lambda_loss":1,
+    "checkpoint_enable":"False",
+    "lr_decay":0.5,
+    "topk_file":"/home_nfs/liushuai/data/gridize_notebooks/XIAN/xian_poi_norm_grid.csv",
+    "num_workers":60
+
+}

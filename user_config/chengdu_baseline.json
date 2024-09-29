@@ -1,0 +1,9 @@
+{
+    "dataset_class": "ChengduBaselineDataset",
+    "metrics": ["Recall", "F1", "NDCG","Precision"],
+    "topk": [1,5,10],
+    "loc_emb_size": 32, 
+    "tim_emb_size": 8, 
+    "hidden_size": 64
+    
+}
