@@ -1,0 +1,11 @@
+{
+    "loc_emb_size": 65,
+    "tim_emb_size": 10,
+    "hidden_size":128,
+    "dropout_p": 0.5,
+    "learning_rate": 0.001,
+    "max_epoch": 30,
+    "optimizer": "adam",
+    "window_size": 72,
+    "max_session_len": 10
+}
