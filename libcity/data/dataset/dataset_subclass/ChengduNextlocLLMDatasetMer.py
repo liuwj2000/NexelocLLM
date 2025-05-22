@@ -18,7 +18,7 @@ parameter_list = ['dataset', 'min_session_len', 'min_sessions', "max_session_len
 
 
 def load_history_data(name,type):
-    file_dir='/home_nfs/liushuai/data/gridize_notebooks/CHENGDU/llmmob/history_'+name+'_'+type+'.pkl'
+    file_dir='../data/gridize_notebooks/CHENGDU/llmmob/history_'+name+'_'+type+'.pkl'
     #print(file_dir)
     f=open(file_dir,'rb')
     data=pickle.load(f)
@@ -27,7 +27,7 @@ def load_history_data(name,type):
     return data
 
 def load_content_data(name,type):
-    file_dir='/home_nfs/liushuai/data/gridize_notebooks/CHENGDU/llmmob/context_'+name+'_'+type+'.pkl'
+    file_dir='../data/gridize_notebooks/CHENGDU/llmmob/context_'+name+'_'+type+'.pkl'
     #print(file_dir)
     f=open(file_dir,'rb')
     data=pickle.load(f)
@@ -36,7 +36,7 @@ def load_content_data(name,type):
     return data
 
 def load_content_data_true(name,type):
-    file_dir='/home_nfs/liushuai/data/gridize_notebooks/CHENGDU/llmmob/context_true_'+name+'_'+type+'.pkl'
+    file_dir='../data/gridize_notebooks/CHENGDU/llmmob/context_true_'+name+'_'+type+'.pkl'
     #print(file_dir)
     f=open(file_dir,'rb')
     data=pickle.load(f)
