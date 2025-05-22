@@ -245,7 +245,7 @@ def run_model_NextlocLLM_MER_lora(config_file=None,
     #随机种子设置
     
     set_seed(seed)
-    path='/home_nfs/liushuai/NextlocLLM/libcity/cache/llm/'
+    path='./NextlocLLM/libcity/cache/llm/'
     #######################################################################
 
     
@@ -281,7 +281,7 @@ def run_model_NextlocLLM_MER_lora(config_file=None,
 
     model = get_model(config,data_feature)
     '''
-    state_dict = torch.load('/home_nfs/liushuai/NextlocLLM/save_file/NextlocLLM.pth')
+    state_dict = torch.load('./save_file/NextlocLLM.pth')
     new_state_dict = {k.replace('module.', ''): v for k, v in state_dict.items()}
     model.load_state_dict(new_state_dict)
     '''
@@ -418,7 +418,7 @@ def run_model_NextlocLLM_MER_lora(config_file=None,
             if(hit_rate10_v<best_val):
                 best_val=hit_rate10_v
                 unwarp_model=accelerator.unwrap_model(model)
-                torch.save(model.state_dict(),'/home_nfs/liushuai/NextlocLLM/save_file/NextlocLLM.pth')
+                torch.save(model.state_dict(),'./NextlocLLM/save_file/NextlocLLM.pth')
             
 
 
@@ -472,7 +472,7 @@ def test_model_NextlocLLM_MER_lora(config_file=None,
     seed = config.get('seed', 0)
     
     set_seed(seed)
-    path='/home_nfs/liushuai/Bigscity-LibCity/libcity/cache/llm/'
+    path='~/Bigscity-LibCity/libcity/cache/llm/'
     #######################################################################
 
     
@@ -501,7 +501,7 @@ def test_model_NextlocLLM_MER_lora(config_file=None,
     
     '''
     #######################################################################
-    state_dict = torch.load('/home_nfs/liushuai/NextlocLLM/save_file/NextlocLLM.pth')
+    state_dict = torch.load('./save_file/NextlocLLM.pth')
     #print(state_dict.keys())
     new_state_dict = {k.replace('module.', ''): v for k, v in state_dict.items()}
     model.load_state_dict(new_state_dict)
