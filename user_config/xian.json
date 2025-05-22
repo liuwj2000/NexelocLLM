@@ -11,7 +11,7 @@
     "lambda_loss":1,
     "checkpoint_enable":"False",
     "lr_decay":0.5,
-    "topk_file":"/home_nfs/liushuai/data/gridize_notebooks/XIAN/xian_poi_norm_grid.csv",
+    "topk_file":"../data/gridize_notebooks/XIAN/xian_poi_norm_grid.csv",
     "num_workers":60
 
 }
