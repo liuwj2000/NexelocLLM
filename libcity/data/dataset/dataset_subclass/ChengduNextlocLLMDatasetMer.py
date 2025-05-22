@@ -339,7 +339,7 @@ class ChengduNextlocLLMDatasetMer(AbstractDataset):
             print('*'*100)
             
             for i in ['history_data','history_dur','history_hour','history_day','history_poi','current_data','current_dur','current_hour','current_day','current_poi','target','target_idx']:
-                np.save('/home_nfs/liushuai/data/geolife/test/'+i+'_mer.npy',eval(i))
+                np.save('../data/geolife/test/'+i+'_mer.npy',eval(i))
             break
         '''
             
